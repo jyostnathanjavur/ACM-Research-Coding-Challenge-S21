@@ -26,6 +26,6 @@ for feature in Store_File.features:
 
     Gen_newSet.add_feature(feature, color = color, label = True, label_size = 20) #Adding and labeling color and size features to the diagram
 
-    #Creating the ouput file using write and draw functions
+    #Creating the output file using write and draw functions
     Gen_Diagram.draw(format = "circular", circular = True, pagesize = (30 * cm, 30 * cm), start = 0, end = len(Store_File), circle_core = 0.8)
     Gen_Diagram.write("OutputFile.jpg", "JPG")
